@@ -256,6 +256,8 @@ src/java/Control/Conexion/ConexionBD.java
 
 Verifique que la URL, el usuario y la contraseña coincidan con la configuración de MySQL instalada.
 
+URL
+
 ```text
 jdbc:mysql://localhost:3306/horoscopobd
 ```
@@ -293,6 +295,7 @@ Podrá acceder desde una dirección similar a (siempre que los servicios de Apac
 http://localhost:8080/Horoscopo
 ```
 
+Si todos los pasos anteriores fueron realizados correctamente, la aplicación estará lista para utilizarse.
 
 </details>
 
