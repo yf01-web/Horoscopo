@@ -129,6 +129,173 @@ Horoscopo
 
 ---
 
+<details>
+<summary><strong>📖 Guía detallada de instalación y ejecución con XAMPP y NetBeans (haz clic para expandir)</strong></summary>
+
+## Requisitos
+
+- Java JDK 8 o superior (el proyecto fue probado con JDK 21).
+- Apache NetBeans.
+- XAMPP.
+- Apache Tomcat 8.5 o superior.
+- MySQL Connector/J.
+
+## 1. Clonar el proyecto
+
+```bash
+git clone https://github.com/yf01-web/Horoscopo.git
+```
+
+## 2. Instalar e iniciar XAMPP
+
+Descargue e instale XAMPP desde el sitio oficial:
+
+https://www.apachefriends.org/es/download.html
+
+> **Importante:** durante la instalación asegúrese de incluir los componentes **Apache**, **MySQL** y **Tomcat**.
+
+Inicie los servicios de **Apache** y **MySQL** desde el panel de control de XAMPP.
+
+![Panel de XAMPP](doc/screenshots/paneldecontrolXAMPP-apache-mysql-activos.png)
+
+## 3. Crear la base de datos
+
+Abra su navegador y acceda a **phpMyAdmin** desde la siguiente dirección:
+
+```text
+http://localhost/phpmyadmin
+```
+
+O presione el botón "Admin" del componente de MySQL en el panel de control XAMPP
+
+![Panel de XAMPP ingresar a PHPMyAdmin](doc/screenshots/paneldecontrolXAMPP-ingresar-a-phpmyadmin.png)
+
+En el panel izquierdo haga clic en **Nueva** y cree una base de datos llamada:
+
+```text
+horoscopobd
+```
+
+![Crear base de datos](doc/screenshots/phpmyadmin-crear-nueva-bd.png)
+
+![Crear base de datos](doc/screenshots/phpmyadmin-crear-nueva-bd-nombre.png)
+
+---
+
+## 4. Importar la base de datos
+
+Una vez creada la base de datos:
+
+1. Seleccione **horoscopobd** en el panel izquierdo.
+2. Haga clic en la pestaña **Importar**.
+3. Presione el botón **Seleccionar archivo**.
+4. Busque el archivo:
+
+```text
+db/horoscopobd.sql
+```
+El script de la base de datos se encuentra en db/horoscopobd.sql.
+
+5. Finalmente haga clic en **Importar**.
+
+![Importar base de datos](doc/screenshots/phpmyadmin-importarbasededatos.png)
+
+## 5. Abrir el proyecto en NetBeans
+
+Abra Apache NetBeans y seleccione:
+
+```text
+File → Open Project...
+```
+Busque la carpeta donde clonó el repositorio y seleccione el proyecto **Horoscopo**.
+
+![Proyecto en Apache Netbeans](doc/screenshots/proyecto-en-netbeans.png)
+
+## 6. Configurar Apache Tomcat
+
+Si Apache Tomcat aún no está configurado en NetBeans:
+
+1. Abra la ventana **Services**.
+2. Haga clic derecho sobre **Servers**.
+3. Seleccione **Add Server...**
+4. Elija **Apache Tomcat**.
+
+![Agregar Tomcat en Apache Netbeans](doc/screenshots/conf-apache-tomcat-netbeans.png)
+
+5. Seleccione la carpeta donde se encuentra instalado Tomcat. (Si Tomcat fue instalado mediante XAMPP, solo será necesario indicar la carpeta donde quedó instalado. **Nota:** En la imagen el servidor ya aparece configurado. Si es la primera vez que lo agrega, simplemente continúe con el asistente hasta finalizar la configuración.)
+
+6. Finalice la configuración 
+
+> Durante la configuración podrá definir un usuario y una contraseña para administrar el servidor Tomcat.
+>
+> Para este proyecto se utilizaron las credenciales de ejemplo:
+>
+> - **Usuario:** `Admin`
+> - **Contraseña:** `Admin`
+
+![Agregar Tomcat en Apache Netbeans y configurarlo con XAMPP](doc/screenshots/conf-apache-tomcat-netbeans-xampp.png)
+
+## 7. Configurar el proyecto para utilizar Apache Tomcat
+
+Haga clic derecho sobre el proyecto **Horoscopo** y seleccione:
+
+```text
+Properties
+```
+En la sección **Run**, seleccione Apache Tomcat como servidor.
+
+![Configurar Tomcat en el Proyecto](doc/screenshots/conf-apache-tomcat-en-el-proyecto.png)
+
+## 8. Verificar la conexión a la base de datos
+
+Abra el archivo:
+
+```text
+src/java/Control/Conexion/ConexionBD.java
+```
+
+Verifique que la URL, el usuario y la contraseña coincidan con la configuración de MySQL instalada.
+
+```text
+jdbc:mysql://localhost:3306/horoscopobd
+```
+
+Usuario
+
+```text
+root
+```
+
+Contraseña
+
+```text
+(en blanco por defecto en XAMPP)
+```
+
+>**Nota** Si modificó estos datos durante la instalación de MySQL, deberá actualizarlos antes de ejecutar la aplicación.
+
+## 9. Ejecutar el proyecto
+
+Ejecute el proyecto desde NetBeans haciendo clic derecho sobre el proyecto y seleccionando:
+
+```text
+Run
+```
+o presione la tecla F6 (o FN+F6 en algunos teclados).
+
+Si la configuración fue realizada correctamente, el navegador abrirá automáticamente la aplicación.
+
+![Proyecto desplegado](doc/screenshots/paginadeinicio.png)
+
+Podrá acceder desde una dirección similar a (siempre que los servicios de Apache, MySQL y Apache Tomcat se encuentren en ejecución.):
+
+```text
+http://localhost:8080/Horoscopo
+```
+
+
+</details>
+
 ## 🗄 Base de datos
 
 El proyecto incluye el script SQL necesario para crear la base de datos:
