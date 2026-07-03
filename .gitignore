@@ -1,0 +1,9 @@
+# Carpetas generadas automáticamente
+build/
+dist/
+
+# Configuración privada de NetBeans
+nbproject/private/
+
+# Archivos compilados de Java
+*.class

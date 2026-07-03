@@ -1,0 +1,292 @@
+/*
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/CascadeStyleSheet.css to edit this template
+*/
+/* 
+    Created on : 27 mar. 2022, 13:12:14
+    Author     : Yeison
+*/
+
+body{
+    background: darkslategrey;
+    margin: 0;
+}
+.header{
+    width: 100%;
+    height: 70px;
+    background: black;
+    
+}
+
+.header a{
+    
+    font-family: arial;
+    color: white;
+    background:black;
+    border-color: white;
+    border: 3px;
+    text-decoration: none;
+    
+     
+    
+    
+}
+
+.header h3{
+    
+    font-family: arial;
+    color: white;
+}
+
+a{
+    margin-top: 5px;
+    cursor: pointer;
+    padding: 10px 3px 10px 3px;
+}
+
+a:hover {
+    
+    padding: 14px 6px 14px 6px;
+    background: gray;
+}
+
+.container{
+    
+  display:flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 20px 0 20px;
+}
+
+/*contendor de los las imágenes de los signos zodiacales*/
+.div-zodiac-signs{
+    
+    margin-top: 5%;
+    margin-left: 27%;
+    background: beige;
+    padding-top: 0%;
+    padding-bottom: 5%;
+    position: absolute;
+    width: 48%;
+    
+}
+
+#titulo-signos{
+    
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 5vh;
+    background: limegreen;
+    
+}
+
+#titulo-signos h1{
+ 
+  color: white;
+  margin: auto;
+}
+
+.div-zodiac-signs input{
+    
+    cursor: pointer;
+   
+}
+
+/*para agrandar las imágenes al acercar el cursor del ratón sobre la imagen*/
+.div-zodiac-signs input[type=image]:hover{
+    
+    width: 100.5%;
+    height: 100.5%;
+    
+}
+
+table{
+    
+    width: 90%;
+    height: auto;
+}
+
+td{ 
+    padding: 1%;
+}
+
+/* el contenedor que contiene la predicción del dia y del mes*/
+.prediction-div{
+    
+    margin-top: 5%;
+    margin-left: 1%;
+    padding-bottom: 0%;
+    position: absolute;
+    width: 23%;
+    height: auto;
+    background: none;
+    
+}
+
+
+/* configuración del estilo del div para la predicción del día, mes y año, y la reserva de la lectura de carta astral*/
+.caja{
+    
+    width: 100%;
+    height: 47vh;
+    background: white;
+    margin: 0;
+    margin-bottom: 5%;
+}
+
+.titulo{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 10%;
+    
+}
+
+.titulo h2{
+    
+    margin: auto;
+    color: white;
+}
+
+#predic-dia{
+    
+    background: blue;   
+}
+
+#predic-mes{
+    
+    background: orange;   
+}
+
+#predic-year{
+    
+    background: darkgreen;   
+}
+
+#predic-carta-astral{
+    
+    background: midnightblue;   
+}
+
+#div-reservar-cita{
+    
+    background: limegreen;
+}
+
+.zodiac-properties{
+    
+    display: flex;
+    align-items: center;
+    margin: 0;
+}
+
+#zodiac-izq{
+    
+    width: 55%;
+    height: 30%;
+    float: left;
+ 
+}
+
+#zodiac-izq img{
+    margin: auto;
+    
+}
+
+#zodiac-der{
+    
+    width: 45%;
+    height: 30%;
+    float: left;
+    color: teal;
+      
+}
+
+#zodiac-der h1{
+    
+    background: none;
+    margin-left: -10%;
+}
+
+#zodiac-information{
+    
+    width: 100%;
+    height: auto;
+    float: left;
+}
+
+
+
+#zodiac-information h3{
+    padding: 4%;
+    margin: auto;
+    color: dodgerblue;
+   
+}
+#zodiac-information input[type=submit]{
+    
+    margin: auto;
+    margin-top: 2%;
+    margin-bottom: 2%;
+    background: dodgerblue;
+    color:white;
+    cursor: pointer;
+}
+
+#zodiac-information input[type=submit]:hover{
+    
+    background: blue;
+    
+}
+
+
+#zodiac-information p{
+   
+    margin: auto;
+    font-family: sans-serif;
+    font-size: 16px;
+    border-color: black;
+    border: 50px;
+    border-radius: 30px;
+    padding: 4%;
+   
+}
+
+
+.div-der{
+    
+    width: 23%;
+    position: absolute;
+    margin-left: 76%;
+    margin-right: 1%;
+    margin-top: 5%;
+    padding-top: 0%;
+    padding-bottom: 0%;
+    height: auto;
+    background: none;
+}
+
+#div-carta-astral{
+    
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 80%;
+    background: none;
+    justify-content: center;
+    
+}
+
+#div-carta-astral input[type=image]{
+    
+    margin: auto;
+}
+
+#div-carta-astral input[type=image]:hover{
+    
+    width: 101%;
+    height: 101%;
+}
+
+

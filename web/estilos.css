@@ -1,0 +1,179 @@
+/*
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/CascadeStyleSheet.css to edit this template
+*/
+/* 
+    Created on : 22 mar. 2022, 13:39:52
+    Author     : Yeison
+*/
+
+
+body{
+    background: darkslategray;
+    margin: 0;
+}
+.header{
+    width: 100%;
+    height: 70px;
+    background: black;
+    
+}
+
+.header a{
+    
+    font-family: arial;
+    color: white;
+    background:black;
+    border-color: white;
+    border: 3px;
+    text-decoration: none;
+    
+     
+    
+    
+}
+
+.header h3{
+    
+    font-family: arial;
+    color: white;
+}
+
+a{
+    margin-top: 5px;
+    cursor: pointer;
+    padding: 10px 3px 10px 3px;
+}
+
+a:hover {
+    
+    padding: 14px 6px 14px 6px;
+    background: gray;
+}
+
+.container{
+    
+  display:flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 20px 0 20px;
+}
+
+.div-zodiac-signs{
+    margin-top: 5%;
+    margin-left: 40%;
+    margin-right: 2%;
+    background: none;
+    padding-top: 5%;
+    padding-bottom: 5%;
+    position: absolute ;
+    width: 58%;
+}
+
+.div-zodiac-signs input{
+    
+    cursor: pointer;
+   
+}
+
+/* para hacer crecer las imagenes cuando se acerca el cursor */
+.div-zodiac-signs input[type=image]:hover{
+    
+    width: 100.5%;
+    height: 100.5%;
+    
+}
+
+table{
+    
+    width: 80%;
+    height: 90%;
+}
+
+td{ 
+    padding: 1%;
+}
+
+.prediction-div{
+    display: flex;
+    margin-top: 5%;
+    margin-left: 2%;
+    padding-top: 5%;
+    padding-bottom: 5%;
+    width: 38%;
+    height: 30vh;
+    flex-direction: column;   
+}
+
+.zodiac-properties{
+    display:flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+#zodiac-img{
+      
+    width: 20%;
+    justify-content: center;
+    
+}
+
+#zodiac-img2{
+    
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+#zodiac-name{
+
+    width: 10%;
+    color:white;
+  
+    
+}
+
+#zodiac-name2{
+
+    width: 30%;
+    height: 50%;
+    float: right;
+    color:white;
+  
+    
+}
+
+#zodiac-information{
+    
+    background: none; 
+    width: 100%;
+    height: 50%;
+}
+
+#zodiac-information h2{
+   
+    margin: auto;
+    padding: 5%;
+    color: white;
+   
+}
+
+#zodiac-information p{
+   
+    margin: auto;
+    background: rgba(5, 7, 32, 0.3);
+    font-family: sans-serif;
+    font-size: 16px;
+    border-color: white;
+    border: 50px;
+    border-radius: 30px;
+    padding: 5%;
+    color: appworkspace;
+   
+}
+.container-horoscopo{
+    
+    width: 100%;
+    height: 50%;
+}
